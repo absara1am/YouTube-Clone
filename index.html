@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" />
+        <img class="youtube-logo" src="icons/youtube-logo.svg" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" />
+          <div class="tooltip">YouTube Apps</div>
+        </div>
+
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" />
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img
+          class="current-user-picture"
+          src="channel-pictures/my-channel.jpg"
+        />
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" />
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
+            <div class="video-time">1:07</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-3.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Marvel's Spider-Man 2 - Be Greater. Together. Trailer I PS5
+                Games
+              </p>
+              <p class="video-author">PlayStation</p>
+              <p class="video-stats">6.7M views &#183; 2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+            <div class="video-time">1:03:40</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-2.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Abhishek Upmanyu - Jealous of Sabziwala (FULL SPECIAL)
+              </p>
+              <p class="video-author">Abhishek Upmanyu</p>
+              <p class="video-stats">11M views &#183; 13 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-7.webp" />
+            <div class="video-time">9:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-7.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Israel and the Palestinians: a century of conflict
+              </p>
+              <p class="video-author">The Economist</p>
+              <p class="video-stats">333K views &#183; 11 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-8.webp" />
+            <div class="video-time">2:56</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-8.jpeg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Apple iPhone 15 Pro Max Real-World Test (Day in the Life Review)
+              </p>
+              <p class="video-author">TheUnlockr</p>
+              <p class="video-stats">67K views &#183; 2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-9.webp" />
+            <div class="video-time">49:37</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-9.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                OpenAI CEO Sam Altman and CTO Mira Murati on the Future of AI
+                and ChatGPT | WSJ Tech Live 2023
+              </p>
+              <p class="video-author">The Wall Street Journal</p>
+              <p class="video-stats">45K views &#183; 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-16.webp" />
+            <div class="video-time">4:05</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-16.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Will “The Hawk Of Lebanon” Join Israel-Hamas War? All Eyes On
+                Hezbollah Leader Hassan Nasrallah
+              </p>
+              <p class="video-author">CRUX</p>
+              <p class="video-stats">52K views &#183; 8 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-12.webp" />
+            <div class="video-time">11:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-12.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                India vs New Zealand Full Match Highlights, IND vs NZ 21st ODI
+                Full Match Highlights | Kohli
+              </p>
+              <p class="video-author">BPC Media</p>
+              <p class="video-stats">14K views &#183; 3 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-10.webp" />
+            <div class="video-time">1:01</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-11.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Introducing DALL·E 3</p>
+              <p class="video-author">OpenAI</p>
+              <p class="video-stats">710K views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-13.webp" />
+            <div class="video-time">3:24</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-13.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Stephen Hawking Discovers The Black Hole Theory | The Theory Of
+                Everything (2014) | Screen Bites
+              </p>
+              <p class="video-author">Screen Bites</p>
+              <p class="video-stats">8.6M views &#183; 3 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-14.webp" />
+            <div class="video-time">11:35</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-14.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                ISRO successfully launches Gaganyaan mission test flight
+              </p>
+              <p class="video-author">The Economic Times</p>
+              <p class="video-stats">257K views &#183; 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-15.webp" />
+            <div class="video-time">3:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-15.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Crane Introduces His Babies To His Human Best Friend Every Year
+                | The Dodo
+              </p>
+              <p class="video-author">The Dodo</p>
+              <p class="video-stats">5.7M views &#183; 12 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.webp" />
+            <div class="video-time">13:50</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channel-10.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">This Laptop Can Last FOREVER</p>
+              <p class="video-author">Dave2D</p>
+              <p class="video-stats">23K views &#183; 35 minutes ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
